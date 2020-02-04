@@ -4,14 +4,19 @@
 // @version      1.0
 // @description  To reduce missing by careless, the User Scripts gets it to be visible.
 // @author       Usagigawara
-// @match        *
+// @include        *
 // @grant        none
 // @run-at       document-body
 // ==/UserScript==
 
 (function() {
     'use strict';
-    const css = ``;
+    const css = `
+/* Glow <img> missing alt attr */
+img:not([alt]) {
+    box-shadow: 0 0 5px red;
+}
+`;
 
     applyCSS(css);
 
