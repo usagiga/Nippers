@@ -11,15 +11,6 @@
 
 (function() {
     'use strict';
-    const css = `
-/* Glow <img> missing alt attr */
-img:not([alt]) {
-    box-shadow: 0 0 5px red;
-}
-`;
-
-    applyCSS(css);
-
     // Helpers
     const applyCSS = (css) => {
         // make <style> included css
@@ -31,4 +22,14 @@ img:not([alt]) {
         const headElem = document.querySelector("head");
         headElem.insertAdjacentElement("afterend", styleElem);
     };
+
+    // Applying CSS
+    const css = `
+/* Glow <img> missing alt attr */
+img:not([alt]) {
+    box-shadow: 0 0 5px red;
+}
+`;
+
+    applyCSS(css);
 })();
