@@ -4,7 +4,7 @@ To reduce missing by careless like burrs, the User Scripts gets it to be visible
 
 ## Features
 
-- Get `<img>` tags missing `alt=""` to grow red.
+- Get `<img>` tags missing `alt=""` to glow.
     - Thanks to [Addy Osmani's tips](https://twitter.com/addyosmani/status/1223872295619330048) !
 
 ## How to Install
